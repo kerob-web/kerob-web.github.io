@@ -1,0 +1,59 @@
+.feedback {
+    margin-top: 90px;
+    
+    .feedback_card {
+        padding: 60px 120px;
+        background: url(../img/feedback/feedback-fon.jpg) no-repeat, #f3f3f3;
+        background-position: top right;
+        background-size: cover;
+        
+        display: grid;
+        grid-template-columns: 330px 400px;
+        justify-content: space-between;
+        align-items: center;
+        
+        .feedback_content {
+            .feedback_subtitle {
+                font-size: 14px;
+                text-transform: uppercase;
+            }
+            .feedback_title {
+                font-size: 28px;
+                text-transform: uppercase;
+                font-weight: bold;
+                margin-top: 35px;
+            }
+            .feedback_text {
+                margin-top: 25px;
+            }
+        }
+        
+        .feedback_form {
+            display: grid;
+            grid-gap: 15px;
+            
+            input, textarea {
+                border: none;
+                border-radius: 30px;
+                padding: 13px 23px;
+                
+                font-family: 'Century Gothic', sans-serif;
+                color: #838282;
+                font-size: 13px;
+                line-height: 1;
+            }
+            .main-btn {
+                color: #fff;
+                font-size: 16px;
+                display: inline;
+                width: 250px;
+                
+                &:hover {
+                    color: @bright-color;
+                    cursor: pointer;
+                    border: 3px solid @bright-color;
+                }
+            }
+        }
+    }
+}

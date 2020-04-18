@@ -1,0 +1,93 @@
+//COLORS
+@bright-color: #ce1538;
+@light-color: #f9d2d9;
+
+@font-face {
+    font-family: "Century";
+    src: url("../fonts/century.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Century Gothic";
+    src: url("../fonts/century_gothic.ttf") format("truetype");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Century Gothic", sans-serif;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+button {
+    border: none;
+    outline: none;
+    
+    &:hover, &:active, &:focus {
+        border: none;
+        outline: none;
+    }
+}
+input:focus, textarea:focus {
+    outline: none;
+}
+
+h1, h2, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+h4 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #111111;
+}
+
+p {
+    margin: 0;
+    margin-top: 35px;
+    padding: 0;
+    font-size: 16px;
+    color: #111111;
+    line-height: 1.5;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.section_title {
+    color: #000;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 600;
+    
+    &::before, &::after {
+        display: block;
+        position: relative;
+        height: 2px;
+        background-color: @bright-color;
+    }
+}
+
+.main-btn {
+    display: inline-block;
+    background-color: @bright-color;
+    padding: 12px 25px;
+    border-radius: 40px;
+    border: 3px solid @bright-color;
+    color: #fff;
+    text-decoration: none;
+    transition: .3s;
+    
+    line-height: 1;
+    
+    &:hover {
+        background-color: #fff;
+        color: @bright-color;
+    }
+}

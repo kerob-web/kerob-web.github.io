@@ -1,0 +1,28 @@
+.social {
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: auto 220px auto;
+    align-items: center;
+    
+    .social_line {
+        height: 3px;
+        background-color: #ed9fad;
+    }
+}
+
+.social_box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    
+    i.fab, i.fas {
+        color: #ed9fad;
+        font-size: 38px;
+        transition: .3s;
+        
+        &:hover {
+            color: @bright-color;
+            cursor: pointer;
+        }
+    }
+}

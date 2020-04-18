@@ -1,0 +1,21 @@
+.about {
+    padding: 100px 0;
+    
+    background: url(../img/about/about-fon-luck.png) left no-repeat, url(../img/about/about-fon-bottles.jpg) right no-repeat;
+    background-position: top -150px left, top right;
+    background-size: auto, 100% auto;
+    
+    .section_title {
+        position: relative;
+        
+        &:before {
+            content: '';
+            width: 50px;
+            left: -20px;
+            top: -10px;
+        }
+    }
+    .section_text {
+        width: 540px;
+    }
+}

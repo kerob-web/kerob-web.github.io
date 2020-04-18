@@ -1,0 +1,43 @@
+.header {
+    background-color: @light-color;
+    
+    .header_nav {
+        height: 90px;
+        padding: 10px 0;
+        
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        align-items: center;
+        
+        .main-logo {
+            height: 80px;
+            width: auto;
+        }
+        
+        .main-nav {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            justify-content: space-around;
+            a {
+                text-decoration: none;
+                font-size: 18px;
+                color: #181818;
+                
+                &:hover {
+                    color: @bright-color;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
