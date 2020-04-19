@@ -5,15 +5,12 @@
   background-position: top -150px left, top right;
   background-size: auto, 100% auto;
 }
-.about .section_title {
-  position: relative;
-}
-.about .section_title:before {
+.about .section_title h3::before {
   content: '';
   width: 50px;
   left: -20px;
   top: -10px;
 }
-.about .section_text {
-  width: 540px;
+.about .about_box {
+  max-width: 540px;
 }

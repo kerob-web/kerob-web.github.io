@@ -4,30 +4,36 @@
     .header_nav {
         height: 90px;
         padding: 10px 0;
-        
         display: -webkit-flex;
         display: -moz-flex;
         display: -ms-flex;
         display: -o-flex;
         display: flex;
         align-items: center;
+        justify-content: space-between;
         
         .main-logo {
-            height: 80px;
+            max-height: 80px;
             width: auto;
         }
         
-        .main-nav {
+        .header_menu {
             display: -webkit-flex;
             display: -moz-flex;
             display: -ms-flex;
             display: -o-flex;
             display: flex;
-            list-style: none;
             padding: 0;
             margin: 0;
-            width: 100%;
-            justify-content: space-around;
+            
+            li{
+                list-style-type: none;
+                margin-left: 30px;
+            }
+            li:first-child {
+                margin-left: 0;
+            }
+            
             a {
                 text-decoration: none;
                 font-size: 18px;
