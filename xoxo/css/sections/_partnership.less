@@ -1,8 +1,15 @@
 .partnership .partnership_box {
     padding: 100px 0;
     display: grid;
-    grid-template-columns: 485px auto;
-    column-gap: 80px;
+    grid-template-columns: 5fr 6fr;
+    
+    @media (max-width:760px) {
+        grid-template-columns: 1fr;
+        padding: 40px 0;
+    }
+        
+    grid-gap: 80px;
+    align-items: start;
     
     .section_title h3::before {
         content: '';
@@ -14,36 +21,45 @@
         margin-top: 30px;
     }
     .partnership_img {
-        width: 480px;
-        height: 370px;
+        width: calc(~'100% - 30px');
         display: -webkit-flex;
         display: -moz-flex;
         display: -ms-flex;
         display: -o-flex;
         display: flex;
-        align-items: center;
-        justify-content: center;
         position: relative;
+        margin-left: 30px;
+        
+        @media (max-width:760px) {
+            order: 2;
+            width: 60%;
+            justify-self: center;
+        }
+        
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
         
         &::before {
             content: '';
             background-color: #ed9fad;
             position: absolute;
             z-index: -1;
-            width: 85%;
-            height: 85%;
-            top: 0;
-            left: 0;
+            width: 100%;
+            height: 100%;
+            top: -30px;
+            left: -30px;
         }
         &::after {
             content: '';
             background-color: #ed9fad;
             position: absolute;
             z-index: -1;
-            width: 85%;
-            height: 85%;
-            bottom: 0;
-            right: 0;
+            width: 100%;
+            height: 100%;
+            bottom: -30px;
+            right: -30px;
         }
     }
 }

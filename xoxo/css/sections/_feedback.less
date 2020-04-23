@@ -8,11 +8,23 @@
         background-size: cover;
         
         display: grid;
-        grid-template-columns: 330px 400px;
-        justify-content: space-between;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        
+        @media (max-width:760px) {
+            grid-template-columns: 1fr;
+            padding: 30px 20px;
+        }
+        
+        grid-gap: 30px;
+        box-sizing: border-box;
         align-items: center;
         
         .feedback_content {
+            max-width: 360px;
+            @media (max-width: 1090px) {
+                max-width: 100%;
+            }
+            
             .feedback_subtitle {
                 font-size: 14px;
                 text-transform: uppercase;
