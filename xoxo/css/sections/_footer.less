@@ -5,8 +5,17 @@
     .container {
         display: flex;
         
+        
+        
         .footer_logo {
             margin-right: 100px;
+            width: 116px;
+            height: auto;
+            
+            img {
+                width: 100%;
+                height: auto;
+            }
         }
         .footer_text p {
             font-size: 13px;
@@ -14,6 +23,19 @@
             
             &:first-child {
                 margin-top: 0;
+            }
+        }
+        @media (max-width: 760px) {
+            display: block;
+            
+            .footer_logo {
+                width: 60px;
+            }
+            .footer_text p {
+
+                &:first-child {
+                    margin-top: 20px;
+                }
             }
         }
     }
