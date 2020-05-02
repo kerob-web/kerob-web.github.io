@@ -2,10 +2,6 @@
     width: 100%;
     padding-top: 110px;
     
-    @media (max-width: 1000px) {
-        padding-top: 60px;
-    }
-    
     .owl-carousel {
         width: 100%;
         
@@ -20,10 +16,6 @@
             background-repeat: no-repeat;
             background-size: cover;
             
-            @media (max-width: 760px) {
-                height: 400px;
-            }
-            
             .top-slider_title {
                 font-size: 32px;
                 text-transform: uppercase;
@@ -36,6 +28,10 @@
                     font-size: 22px;
                     margin-left: 10%;
                 }
+            }
+            
+            @media (max-width: 760px) {
+                height: 400px;
             }
         }
         
@@ -72,5 +68,9 @@
         
         .owl-dots {
         }
+    }
+    
+    @media (max-width: 1000px) {
+        padding-top: 60px;
     }
 }

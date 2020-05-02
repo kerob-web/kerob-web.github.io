@@ -2,12 +2,6 @@
     padding: 100px 0;
     display: grid;
     grid-template-columns: 5fr 6fr;
-    
-    @media (max-width:760px) {
-        grid-template-columns: 1fr;
-        padding: 40px 0;
-    }
-        
     grid-gap: 80px;
     align-items: start;
     
@@ -17,9 +11,11 @@
         top: -10px;
         left: -20px;
     }
+    
     .main-btn {
         margin-top: 30px;
     }
+    
     .partnership_img {
         width: calc(~'100% - 30px');
         display: -webkit-flex;
@@ -29,12 +25,6 @@
         display: flex;
         position: relative;
         margin-left: 30px;
-        
-        @media (max-width:760px) {
-            order: 2;
-            width: 60%;
-            justify-self: center;
-        }
         
         img {
             width: 100%;
@@ -51,6 +41,7 @@
             top: -30px;
             left: -30px;
         }
+        
         &::after {
             content: '';
             background-color: #ed9fad;
@@ -61,5 +52,16 @@
             bottom: -30px;
             right: -30px;
         }
+        
+        @media (max-width:760px) {
+            order: 2;
+            width: 60%;
+            justify-self: center;
+        }
+    }
+    
+    @media (max-width:760px) {
+        grid-template-columns: 1fr;
+        padding: 40px 0;
     }
 }
